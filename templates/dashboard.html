@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC | Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <div><i class='bx  bx-user-hexagon'></i> <span>Profile</span></div>
+                    </li>
+                    <li>
+                        <div><i class='bx  bx-message-circle-detail'></i> <span>Chat</span></div>
+                    </li>
+                    <li class="logout-item">
+                        <div id="logout-btn"><i class='bx  bx-arrow-out-left-square-half'></i><span>Logout</span></div>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Wrapper -->
+        <div class="main-wrapper">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="logo-area">
+                    <img src="https://code-hamster-rohit1008.github.io/image_repo/logo.png" alt="OPC Logo"
+                        class="brand-logo">
+                    <div class="brand-text">
+                        <h1 class="brand-title">OPC</h1>
+                        <p class="brand-subtitle">Own Professional Collaboration</p>
+                    </div>
+                </div>
+                <!-- <div class="user-name-area">
+                    <p>{{ session['username'] }}</p>
+                </div> -->
+            </header>
+
+            <!-- Main Content -->
+            <main class="content-area">
+                <div class="wip-container">
+                    <h2>Work in Progress</h2>
+                    <div>
+                        We are working day and night to provide you with the best possible service. Please come back
+                        later to check out our new features.
+                        Meanwhile, you can follow us on our social media pages.<br>
+                        ( just between us &#129323; we will be dropping all our updates there &#x1F609; )
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class='bxl  bx-instagram'></i></a>
+                        <a href="#"><i class='bxl  bx-twitter-x'></i></a>
+                        <a href="#"><i class='bxl  bx-facebook'></i></a>
+                    </div>
+                    <div class="loading-bar"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+
+</html>
