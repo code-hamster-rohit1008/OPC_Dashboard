@@ -12,14 +12,11 @@ def index():
     if check_tokens_availability():
         return render_template('index.html')
     else:
-        return redirect('http://127.0.0.1:5500/index.html')
+        return redirect('https://www.theowncollab.com/index.html')
 
 @app.route('/dashboard')
 def dashboard():
     if check_tokens_availability():
         return render_template('dashboard.html')
     else:
-        return redirect('http://127.0.0.1:5500/index.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
+        return redirect('https://www.theowncollab.com/index.html')

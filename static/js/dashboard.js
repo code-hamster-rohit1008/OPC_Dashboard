@@ -25,13 +25,13 @@ logoutBtn.addEventListener('click', async () => {
             document.cookie = `accessToken=; ${deleteOptions}`;
             document.cookie = `refreshToken=; ${deleteOptions}`;
             document.cookie = `token_type=; ${deleteOptions}`;
-            window.location.href = 'http://127.0.0.1:5500/index.html';
+            window.location.href = 'https://www.theowncollab.com/index.html';
         }
         if (data.status_code == 401) {
             document.cookie = `accessToken=; ${deleteOptions}`;
             document.cookie = `refreshToken=; ${deleteOptions}`;
             document.cookie = `token_type=; ${deleteOptions}`;
-            window.location.href = 'http://127.0.0.1:5500/index.html';
+            window.location.href = 'https://www.theowncollab.com/index.html';
         }
     }
     catch (error) {
